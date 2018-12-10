@@ -4,9 +4,9 @@ squid3:
 squidguard:
  pkg.installed
 
-/srv/salt/asetus:
- cmd.run:
-   - source: salt://asetus.sh
-asetus.sh:
- cmd.run:
-   - source: salt://asetus
+/srv/salt/asetus.sh:
+  cmd.script:
+    - name: asetus.sh
+    - source: salt://asetus.sh
+    - creates:
+      - /etc/logit/done.log
