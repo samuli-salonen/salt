@@ -6,6 +6,9 @@ php:
   
 mariadb:
   pkg.installed:
+    - pkgs:
+      - mariadb-server
+      - mariadb-client
  
 /var/www/html/index.html:
   file.managed:
@@ -26,9 +29,9 @@ apache2service:
       - file: /etc/apache2/mods-enabled/userdir.conf
       - file: /etc/apache2/mods-enabled/userdir.load
       
-lampscript:
+lampsh:
   cmd.script:
     - name: lampsh.sh
     - source: salt://lampsh.sh
     - creates:
-      - /etc/liiba/tehty.log
+      - /etc/salt/tehty.log
