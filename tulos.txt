@@ -1,0 +1,76 @@
+orja:
+----------
+          ID: apache2
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed
+     Started: 17:35:44.196544
+    Duration: 624.695 ms
+     Changes:   
+----------
+          ID: php
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed
+     Started: 17:35:44.821361
+    Duration: 2.779 ms
+     Changes:   
+----------
+          ID: mariadb
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed
+     Started: 17:35:44.824213
+    Duration: 3.74 ms
+     Changes:   
+----------
+          ID: /var/www/html/index.html
+    Function: file.managed
+      Result: True
+     Comment: File /var/www/html/index.html is in the correct state
+     Started: 17:35:44.832391
+    Duration: 18.069 ms
+     Changes:   
+----------
+          ID: /etc/apache2/mods-enabled/userdir.conf
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /etc/apache2/mods-enabled/userdir.conf is present and owned by root:root
+     Started: 17:35:44.850561
+    Duration: 1.162 ms
+     Changes:   
+----------
+          ID: /etc/apache2/mods-enabled/userdir.load
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /etc/apache2/mods-enabled/userdir.load is present and owned by root:root
+     Started: 17:35:44.851857
+    Duration: 1.03 ms
+     Changes:   
+----------
+          ID: apache2service
+    Function: service.running
+        Name: apache2
+      Result: True
+     Comment: The service apache2 is already running
+     Started: 17:35:44.853956
+    Duration: 33.428 ms
+     Changes:   
+----------
+          ID: lampsh
+    Function: cmd.script
+        Name: lampsh.sh
+      Result: True
+     Comment: All files in creates exist
+     Started: 17:35:44.889189
+    Duration: 0.686 ms
+     Changes:   
+
+Summary for orja
+------------
+Succeeded: 8
+Failed:    0
+------------
+Total states run:     8
+Total run time: 685.589 ms
+
