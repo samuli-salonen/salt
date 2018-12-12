@@ -9,4 +9,4 @@ squidguard:
     - name: asetus.sh
     - source: salt://asetus.sh
     - creates:
-      - /etc/logit/done.log
+      - /etc/squid/done.log
