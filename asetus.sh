@@ -1,4 +1,5 @@
 #bin/bash
+sleep 10s
 sudo apt-get update
 sleep 5s
 sudo ufw allow 8888
