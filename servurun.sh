@@ -1,5 +1,5 @@
 #bin/bash teamspeak3 server installation script
-printf "This will take 10 minutes! take a coffee brake!"
+echo -e "\E[1;33mServu asentuu... this will take up to 10 minutes"
 sleep 5s #note that some times installation failes, because there is too many commands driven at once, this is fixed by adding sleep command after update, upgrade and installation commands like sudo apt-get upgrade.
 sudo apt-get update #updates
 sleep 20s
@@ -73,4 +73,5 @@ sudo ufw deny 445
 sleep 5s
 sudo ufw deny 7777
 sleep 5s
-echo "Server has been installed"
+echo -e "\E[1;33mServu on nyt asennttu!"
+
