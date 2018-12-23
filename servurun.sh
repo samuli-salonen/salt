@@ -61,6 +61,8 @@ sudo ufw allow 443/tcp
 sleep 10s
 sudo apt-get install -y openssh-server
 sleep 10s
+sudo apt-get install -y fail2ban
+sleep 10s
 sudo ufw allow 22/tcp
 sleep 10s
 sudo ufw deny 137
