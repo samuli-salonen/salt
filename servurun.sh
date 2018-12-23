@@ -77,4 +77,6 @@ sleep 5s
 sudo ufw deny 7777
 sleep 5s
 echo -e "\E[1;33mServu on nyt asennttu!"
+sleep 2s
+echo -e "\E[0m..."
 
